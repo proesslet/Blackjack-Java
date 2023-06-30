@@ -72,6 +72,11 @@ public class Blackjack {
                 printHand(playerHand);
                 System.out.println("Hand total: " + getHandTotal(playerHand));
                 System.out.println("");
+
+                if (getHandTotal(playerHand) > 21) {
+                    System.out.println("You busted!");
+                    break;
+                }
             } else {
                 break;
             }
@@ -97,10 +102,15 @@ public class Blackjack {
 
         for (Card c : hand) {
             total += c.getValue();
-            if (total > 21 && acesAsEleven > 0) {
-                total -= 10;
-                acesAsEleven -= 1;
+
+            if (c.getRank() == Rank.ACE) {
+                acesAsEleven += 1;
             }
+        }
+
+        while (total > 21 && acesAsEleven > 0) {
+            total -= 10;
+            acesAsEleven -= 1;
         }
 
         return total;
