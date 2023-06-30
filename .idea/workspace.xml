@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="445a3cb3-05bb-4be4-be2c-3f746ebbf2c5" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="445a3cb3-05bb-4be4-be2c-3f746ebbf2c5" name="Changes" comment="Fixed ace bug">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prestonroesslet/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestonroesslet/Blackjack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,11 +82,19 @@
       <option name="project" value="LOCAL" />
       <updated>1688104854105</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed ace bug">
+      <created>1688105696740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688105696740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Fixed ace bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed ace bug" />
   </component>
 </project>

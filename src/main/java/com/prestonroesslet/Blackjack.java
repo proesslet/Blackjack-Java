@@ -48,13 +48,11 @@ public class Blackjack {
 
         // Show dealers first card
         System.out.println("The dealer's first card is:");
-        System.out.println(dealerHand.get(0));
-        System.out.println("");
+        System.out.println(dealerHand.get(0) + "\n");
 
         // Show Player their cards
         System.out.println("Your current hand is:");
         printHand(playerHand);
-        System.out.println("");
         System.out.println("Your hand total is " + getHandTotal(playerHand));
     }
 
@@ -71,7 +69,6 @@ public class Blackjack {
                 System.out.println("Your hand is now:");
                 printHand(playerHand);
                 System.out.println("Hand total: " + getHandTotal(playerHand));
-                System.out.println("");
 
                 if (getHandTotal(playerHand) > 21) {
                     System.out.println("You busted!");
@@ -94,6 +91,7 @@ public class Blackjack {
         for (Card c : hand) {
             System.out.println(c);
         }
+        System.out.println("");
     }
 
     public int getHandTotal(List<Card> hand) {
@@ -128,7 +126,7 @@ public class Blackjack {
             System.out.println("Congrats, you win! You had " + playerTotal + ". The dealer had " + dealerTotal);
         } else if (dealerTotal > playerTotal) {
             System.out.println("Sorry, you lose. The dealer had " + dealerTotal + ". You only had " + playerTotal);
-        } else if (playerTotal == dealerTotal) {
+        } else {
             System.out.println("It's a tie!");
         }
 
@@ -136,7 +134,6 @@ public class Blackjack {
         System.out.println("Final Hands");
         System.out.println("Your hand - " + playerTotal);
         printHand(playerHand);
-        System.out.println("");
         System.out.println("Dealer hand - " + dealerTotal);
         printHand(dealerHand);
     }
